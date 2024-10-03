@@ -1,0 +1,11 @@
+/* Tambahkan gaya khusus Anda di sini */
+.skill-box {
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .skill-box:hover {
+    transform: scale(1.1);
+  }
+  

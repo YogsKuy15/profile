@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yoga | Developer in Progress</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome -->
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-section {
+      background-image: url('img/bg.gif'); /* Ganti dengan path ke gambar latar belakang Anda */
+      background-size: cover; /* Memastikan gambar mengisi seluruh area */
+      background-position: center; /* Memusatkan gambar */
+      background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+      min-height: 60vh; /* Tinggi minimum section */
+      display: flex;
+      align-items: center; /* Memusatkan konten secara vertikal */
+      justify-content: center; /* Memusatkan konten secara horizontal */
+      text-align: center; /* Memusatkan teks */
+      padding: 20px; /* Menambahkan padding */
+    }
+
+    nav.navbar {
+      background: linear-gradient(45deg, #0a0f12, #0277bd);
+    }
+
+    .navbar-brand, .nav-link {
+      color: #c9d1d9;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      color: #0277bd;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+    h1, h2, h4 {
+      color: #0277bd;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    .bg-primary {
+      background-color: #161b22 !important;
+    }
+
+    .rounded-circle {
+      border: 3px solid #0277bd;
+      width: 200px;  /* Increased size for profile picture */
+      height: 200px; /* Increased size for profile picture */
+      object-fit: cover; /* Ensure the image fits within the circle */
+    }
+
+    .card {
+      background-color: #1f2933;
+      border: none;
+    }
+
+    .card-body {
+      color: #c9d1d9;
+    }
+
+    .card-title {
+      color: #0277bd;
+    }
+
+    .btn-primary {
+      background-color: #0277bd;
+      border-color: #0277bd;
+    }
+
+    .btn-primary:hover {
+      background-color: #0585c3;
+      border-color: #0585c3;
+    }
+
+    footer {
+      background-color: #0a0f12;
+      color: #c9d1d9;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Styles for project images */
+    .card-img-top {
+      height: 200px; /* Maintain consistent height */
+      object-fit: cover; /* Ensure images fit properly */
+    }
+
+    .lead {
+      font-style: italic; /* Italic font style */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MY Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white">
+    <div class="container">
+      <img src="img/foto.jpg" alt="Profile Picture" class="rounded-circle mb-4">
+      <h1 class="display-4 text-light lead">Prayoga Kurniawan</h1>
+      <p class="lead">Informatika | Institut Teknologi dan Bisnis PalComTech</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>About Me</h2>
+          <p>I am a 7th semester Informatics Study Program student 
+            at the Palcomtech Institute of Technology and Business. 
+            I have knowledge in various programming languages such as HTML, PHP, 
+            Python, Dart (in Flutter programming), Firebase, and Laravel frameworks, as well as MySQL databases.</p>
+        </div>
+        <div class="col-lg-6">
+          <h2>Details</h2>
+          <ul>
+            <li><strong>Name:</strong> Prayoga Kurniawan</li>
+            <li><strong>Email:</strong> prayogakurniawan15@gmail.com</li>
+            <li><strong>Phone:</strong> 0899-3382-246</li>
+            <li><strong>Location:</strong> Palembang City in South Sumatera</li>
+            <li>
+              <strong>Connect with me:</strong>
+              <a href="https://www.linkedin.com/in/prayoga-kurniawan-130b00311/" target="_blank" class="text-light me-2">
+                <i class="fab fa-linkedin fa-lg"></i>
+              </a>
+              <a href="https://discord.com/invite/461753050013368330" target="_blank" class="text-light">
+                <i class="fab fa-discord fa-lg"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="bg-dark py-5">
+    <div class="container">
+      <h2 class="text-center">Project Experience</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/pilemas.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Pilemas</h5>
+              <p class="card-text">Developing a health-themed mobile application 
+                using the Dart programming language. This project was done with a 
+                team to create innovative solutions that support a healthy lifestyle. 
+                I am responsible for inputting the theme content into the mobile application.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/logo.jpeg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">FayrMob</h5>
+              <p class="card-text">FayrMob stands for Fajar and Yoga Rental Mobil, 
+                this application was developed by me and my friend with the Dart 
+                programming language on Flutter and Firebase for the database, 
+                I am on this team as the UI maker and database implementer for the application.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/fzb.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Frozbite</h5>
+              <p class="card-text">This is an e-commerce website that my team is working on, 
+                divided into 3 divisions: programmers, hustlers, hipsters and I am the hustler 
+                in the team who is responsible for being the liaison between technology and business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <p>&copy; 2024 Every step we take is proof of our commitment to the goal.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
